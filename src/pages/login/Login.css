@@ -1,0 +1,162 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap);
+.main-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe26f;
+    background: url('../../assets/background.jpg');
+    background-size: 100% 100%;
+  }
+  
+  .login {
+    background: rgb(255, 255, 255);
+    display: inline-block;
+    box-shadow: 0 0 20px 0px rgb(0 0 0 / 40%);
+    border-radius: 30px;
+    width: 450px;
+    align-items: cente;
+  }
+  
+  .login h1 {
+    text-align: center;
+    color: #012443;
+    padding: 20px;
+  }
+  
+  .log-container form {
+    display: inline-block;
+    padding: 30px;
+  }
+  
+  .log-container form input {
+    width: 90%;
+    height: 40px;
+    margin: 20px;
+    border: none;
+    border-bottom: 1px solid;
+    border-color: grey;
+    outline: none;
+  }
+  
+  .log-container form input:hover {
+    border-bottom: 1px solid;
+    border-color: #012443;
+  }
+  
+  .log-btn {
+    border: none;
+    cursor: pointer;
+    width: 230px;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    margin-left: 70px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    background-color: #012443;
+    color: white;
+    border-radius: 50px;
+    font-weight: bold;
+  }
+  
+  .log-btn a {
+    text-decoration: none;
+    color: white;
+    background: transparent;
+  }
+  
+  .log-btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: #012443;
+    font-weight: bold;
+    border: 1px solid #012443;
+  }
+  
+  .forgot {
+    display: inline-block;
+    margin-left: 120px;
+  }
+  
+  .forgot a {
+    text-decoration: none;
+    color: rgb(0, 162, 255);
+  }
+  
+  .signup {
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .signup a {
+    text-decoration: none;
+    color: rgb(0, 162, 255);
+  }
+  
+  @media only screen and (max-width: 1024) {
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+  }
+  nav {
+    position: sticky;
+    top:0;
+    background-color: #ffe26f;
+    box-shadow: 0px 0px 10px #B7B7B7;
+    height: 60px;
+    width: 100%;
+  }
+  
+  label.logo {
+    color:#012443;
+    font-size: 30px;
+    line-height: 60px;
+    padding: 0 20px;
+    font-weight: bold;
+  }
+  nav ul {
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li {
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+  }
+  nav ul li a {
+    color:#012443;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  #id{
+    /* background: ; */
+    border-radius: 20px;
+  }
+  a:hover {
+    /* background: white; */
+    transform: 0.5s;
+    border-radius: 20px;
+  }
+  .checkbtn {
+    font-size: 30px;
+    color: #012443;
+    float: right;
+    line-height: 60px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check {
+    display: none;
+  }
+  .text-danger{
+    color: red;
+    font-weight: bold;
+  }

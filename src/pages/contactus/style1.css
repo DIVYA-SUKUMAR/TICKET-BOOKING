@@ -1,0 +1,264 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+
+/* #id{
+  background: #012443;
+  border-radius: 20px;
+  color: white;
+}
+a:hover {
+  background: #012443;
+  transform: 0.5s;
+  border-radius: 20px;
+  color:white
+}
+.checkbtn {
+  font-size: 30px;
+  color: #012443;
+  float: right;
+  line-height: 60px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+
+
+@media  (max-width: 1024px){
+  label.logo {
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 20px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1024px){
+  .checkbtn {
+    display: flex;
+  }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #012443;
+    top: 60px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: flex;
+    justify-content: center;
+    /* line-height: 40px; */
+  /* } */
+  /* nav ul li a {
+    font-size: 20px;
+    color:white
+  }
+
+ 
+  nav ul li a:hover {
+    
+   border-radius: 20px;
+   border: 2px solid;
+  border-radius: 20px;
+    color:white;
+  transform: 0.5s;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+} */
+/* .footer{
+  position:fixed;
+  left:0;
+  bottom: 0;
+  width:100%;
+  background-color:#ffe26f;
+  text-align: center;
+  color:#012443;
+  font-weight: bold;
+}  */
+
+/* body{
+  height: 100vh;
+  width: 100%;
+ background-color: white;
+  background-size: cover;
+} */
+.tcon{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  
+}
+.tcontainer{
+  z-index: 12;
+  max-width: 1050px;
+  width: 100%;
+  background:#ffe26f;
+  border-radius: 12px;
+  margin:0 20px; 
+  box-shadow: 0 5px 10px #012443;
+  
+}
+/* .container */
+.tcontent{ 
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 20px;
+ 
+}
+.tcontent .timage-box{
+  max-width: 55%;
+}
+.tcontent .timage-box .tcontactimg{
+  width: 100%;
+}
+.tcontent .ttopic{
+  font-size: 22px;
+  font-weight: 500;
+  color: #012443;
+}
+.tcontactform{
+  width: 40%;
+  margin-right: 30px;
+  
+}
+.tcontent .tinput-box{
+  height: 50px;
+  width: 100%;
+  margin: 16px 0;
+  position: relative;
+}
+.tcontent .tinput-box .ttextbox{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  padding-left: 16px;
+  background:#fff;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.tcontent .tinput-box .ttextbox:focus
+{
+  border-color: #012443;
+  background-color: #fff;
+}
+/* .content .input-box label{
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  color: #636c72;
+  font-size: 15px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+} */
+.tcontent .tinput-box .ttextbox:focus~label,
+.tcontent .tinput-box .ttextbox:valid~label{
+  top: 0;
+  left: 12px;
+  display: 14px;
+  color: #012443;
+  background: #fff;
+}
+.tcontent .tmessage-box{
+  min-height: 100px;
+  position: relative;
+}
+.tcontent .tmessage-box .tmsgbox{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  resize: none;
+  background: #fff;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  outline: none;
+  transition :0.3s ease;
+}
+.tcontent .tmessage-box .tmsgbox:focus{
+  border-color: #012443;
+  background-color: #fff;
+}
+.tcontent .tmessage-box label{
+  position: absolute;
+  font-size: 16px;
+  color: #636c72;
+  left: 18px;
+  top: 6px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.tcontent .tmessage-box .tmsgbox:focus ~ label{
+  left: 12px;
+  top: -10px;
+  color: #012443;
+  font-size: 14px;
+  background: #fff;
+}
+ .tsubmitbutton{
+  color: #fff;
+  background:#012443;
+  padding-left: 0;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  height: 50px;
+  width: 100%;
+  border-radius: 6px;
+}
+ .tsubmitbutton:hover{
+  background-color: #fff;
+  color:#012443;
+}
+.ttext-danger{
+  color:red;
+
+}
+.messagelogo{
+  font-size: 48px;
+  color:#012443;
+ text-align: center;
+}
+.textmsg{
+  text-align: center;
+  color:#012443;
+  font-size: 20px;
+}
+@media (max-width:1000px) {
+  .content .image-box{
+    max-width: 70%;
+  }
+  .content{
+    padding: 10px 0;
+  }
+}
+@media (max-width:900px) {
+  .content .image-box{
+    display: none;
+  }
+  .content .contactform{
+    width: 100%;
+    margin-left: 30px;
+
+  }
+}

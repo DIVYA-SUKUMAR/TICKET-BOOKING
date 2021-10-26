@@ -1,0 +1,210 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap);
+
+* {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+}
+
+.passenger input[type='text']:focus,
+.passenger input[type='number']:focus,
+.dropdowns:focus {
+  outline: none !important;
+  border: 1px solid yellow;
+  box-shadow: 0 0 10px #719ece;
+}
+#head {
+  background-color: #ffe26f;
+  color: black;
+  font-size: 20px;
+  height: fit-content;
+  padding: 6px;
+  border-radius: 5px;
+}
+.cont {
+  width: 100%;
+  display: inline-block;
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0px 0px 10px #b7b7b7;
+}
+
+#c1,
+#c2,
+#c3 {
+  font-size: 16px;
+  display: inline-block;
+  width: 33%;
+
+  padding-top: 3px;
+}
+#space {
+  width: 100%;
+  height: 30px;
+}
+#table {
+  justify-content: space-around;
+  padding: 20px;
+}
+
+#tb {
+  width: 100%;
+  background-color: white;
+  border-collapse: collapse;
+  text-align: center;
+  border-radius: 5px;
+  
+  justify-items: center;
+  box-shadow: 0px 0px 10px #b7b7b7;
+
+}
+.row {
+
+  width: fit-content;
+  padding: 10px;
+  margin-left: 20%;
+}
+
+.passenger td {
+  padding: 10px;
+}
+
+.passenger select {
+  width: 100%;
+  height: 10%;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+.children input[type='text'],
+.children input[type='number']
+ {
+  width: 100%;
+  height: 10%;
+  border: 1px solid black;
+  border-radius: 2px;
+  justify-content: space-between;
+  padding: 5px;
+ 
+}
+.checkbox {
+  height: 17px;
+  width: 17px;
+}
+.dropdowns {
+
+  border: 1px solid #29a2e0;
+  border-radius: 2px;
+  padding: 4px;
+  margin: 10px;
+}
+
+#reset {
+  width: fit-content;
+  height: fit-content;
+  padding: 6px;
+  background-color: #012443;
+  color: WHITE;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#reset:hover {
+  background: none;
+  color: #012443;
+}
+.af a {
+  text-decoration: none;
+  color: black;
+  
+}
+#trac {
+  text-align: center;
+  margin-top: 20px;
+}
+#capt {
+  width: 49%;
+  display: inline-block;
+  border-right: 2px solid #ffe26f;
+  padding: 5px;
+  margin-top: 20px;
+}
+#num {
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 2%;
+  text-align: center;
+  margin-top: 20px;
+}
+#num input[type=tel]:focus{
+  outline: none !important;
+  border: 1px solid yellow;
+  box-shadow: 0 0 10px #719ece;
+}
+@media only screen and (max-width: 1000px) {
+  .journey {
+    width: 100%;
+  }
+  #c1,
+  #c2,
+  #c3 {
+    font-size: 15px;
+    width: 100%;
+    padding: none;
+    display: contents;
+  }
+  #table,
+  #tb {
+    width: 100%;
+    overflow: scroll;
+  }
+  .row {
+    width: 100%;
+    overflow: scroll;
+    margin-left: 0px;
+  }
+  #capt {
+    width: 100%;
+    border-right: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #repbtn {
+    width: fit-content;
+    margin-left: 40%;
+    margin-top: 2%;
+  }
+  #num {
+    width: 100%;
+  }
+  #reset {
+    width: fit-content;
+  }
+  #trac {
+    width: 100%;
+    text-align: inherit;
+  }
+ 
+  #afchknum {
+    width: 100%;
+  }
+}
+.passenger input[type='text']{
+
+ 
+
+  width: 100%;
+
+  height: 10%;
+
+  border: 1px solid black;
+
+  border-radius: 2px;
+
+  justify-content: space-between;
+
+  padding: 5px;
+
+}

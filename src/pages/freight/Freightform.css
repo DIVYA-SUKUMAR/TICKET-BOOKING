@@ -1,0 +1,160 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap);
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.sanfs{
+    /* width:600px; */
+    background-color:#ffffffcc;
+    border-radius: 10px;
+    box-shadow: 1px 6px 6px #012443;
+    font-weight: bold;
+    margin:20px 0px 0px 0px;
+}
+.sanbodypart{
+    text-align: center;
+    /* background-image: url("https://images.designtrends.com/wp-content/uploads/2016/02/23104340/Excellent-Train-Wallpaper.jpg"); */
+    background-image: url('../../assets/Excellent-Train-Wallpaper.jpg');
+    background-size: cover;
+    padding:40px;
+}
+.sanformpart{
+    display: inline-block;
+    
+}
+.sanlabel1{
+    /* padding:20px 20px; */
+
+    width:35%;
+    line-height:40px;
+    display: inline-block;
+}
+.sanheadingtxt{
+    color:#012443;
+}
+.sanin{
+    width:55%; 
+    border: none;
+    border-bottom:1px solid;
+    padding:15px 20px;
+    font-weight: bold;
+}
+.santxtbold{
+    font-weight: bolder;
+    /* padding: 0px; */
+    
+    
+}
+.santxtpadding{
+    padding-bottom: 10px;
+}
+.sanbtnre{
+    display:flex;
+}
+.sanin:focus{
+    width:55%; 
+    border: none;
+    border-bottom:1px solid;
+    padding:15px 20px;
+    font-weight: bold;
+}
+.sanlin{
+    text-align: left;
+    padding:20px 20px;
+    display: flex;
+    /* justify-content: space-around; */
+}
+.sanbtncolor{
+    margin:20px 40px;
+    /* width:150px; */
+    border-radius: 5px;
+    background-color: #012443;
+    display: inline-block;
+    justify-content: space-between;
+    border: none;
+    color:white;
+    font-weight: bold;
+    padding:15px 30px;
+}
+.sanbtncolor:hover{
+    box-shadow: 2px 2px 5px #012443;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+    color:#012443;
+}
+.sanselect1:focus{
+background-color: rgba(1, 36, 67,.5);
+color: white;
+font-weight: bold;
+}
+.sandep{
+    width: 75%;
+    margin-left: 50px;
+        display:flex;
+}
+.sanerror{
+    color: red;
+    text-align: center;
+}
+@media (max-width:650px) and (min-width:300px)  {
+    .sanfs{ 
+        /* width:450px; */
+        background-color:#ffffffcc;
+        border-radius: 10px;
+        box-shadow: 1px 6px 6px #012443;
+        font-weight: bold;
+        margin:20px 0px 0px 0px;
+        padding-left: 10px;
+    }
+    .sanlabel1{
+        /* padding:20px 20px; */
+    
+        width:35%;
+        line-height:20px;
+        display: inline-block;
+    }
+    .sanlin{
+        text-align: left;
+        padding:10px 10px;
+        /* justify-content: space-around; */
+    }
+    .sanin{
+        width:50%; 
+        border: none;
+        border-bottom:1px solid;
+        /* padding:15px 20px; */
+        /* font-weight: bold; */
+    }
+    .sanin:focus{
+        width:50%; 
+        border: none;
+        border-bottom:1px solid;
+        /* padding:15px 20px; */
+        font-weight: bold;
+    }
+    .sanbtncolor{
+        margin:10px;
+        /* width:150px; */
+        border-radius: 5px;
+        background-color: #012443;
+        display: inline-block;
+        /* justify-content: space-between; */
+        border: none;
+        color:white;
+        font-weight: bold;
+        padding:10px 15px;
+    }
+    .sanbodypart{
+        text-align: center;
+        
+        /* background-image: url("https://images.designtrends.com/wp-content/uploads/2016/02/23104340/Excellent-Train-Wallpaper.jpg"); */
+        background-image: url('../../assets/Excellent-Train-Wallpaper.jpg');
+        background-size: cover;
+        /* padding-bottom:140px; */
+    }
+    
+}
