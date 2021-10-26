@@ -23,5 +23,5 @@ app.use('/Contact',Contact)
 app.use('/User',User)
 const port = process.env.port || 4000 ;
 app.listen(port,()=>{
-    console.log("running in port 7000");
+    console.log("server listening to port "+port);
 })
