@@ -21,7 +21,7 @@ app.use('/Payment',Payment)
 app.use('/Freight',Freight)
 app.use('/Contact',Contact)
 app.use('/User',User)
-const port = process.env.PORT || 4000 ;
+const port = process.env.port || 4000 ;
 app.listen(port,()=>{
     console.log("running in port 7000");
 })
