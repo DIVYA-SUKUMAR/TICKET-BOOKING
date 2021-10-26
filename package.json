@@ -40,7 +40,8 @@
     
   },
   "engines": {
-    "node": "14.17.1"
+    "node": "14.17.1",
+    "npm":"6.14.13"
 },
   "proxy": "http://localhost:4000"
 }
