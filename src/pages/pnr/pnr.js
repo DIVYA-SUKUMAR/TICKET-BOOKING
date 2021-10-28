@@ -18,7 +18,7 @@ export default function Pnr() {
     const onSubmit = data => {
       console.log(data);
       handleOpen()
-      axios.post('http://localhost:7000/Pnr/viewpnr',data,{
+      axios.post('http://localhost:8080/Pnr/viewpnr',data,{
         headers:{authorization:`Bearer ${Token()}`}
        }).then((res)=>{setpnr(res.data);})
       console.log(data)};
