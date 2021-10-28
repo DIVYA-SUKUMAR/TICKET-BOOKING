@@ -39,7 +39,7 @@ function Update(props) {
     const supdateData = (e) => {
         e.preventDefault()
         try {
-            axios.patch("http://localhost:7000/Freight/updatefreight",
+            axios.patch("http://localhost:8080/Freight/updatefreight",
             { sfid:sf,sfname:sfname, sftype:sftype,sdeparture:sdeparture, sarrival:sarrival,sfrom:sfrom, sto:sto },{
                 headers:{authorization:`Bearer ${Token()}`}
                }
