@@ -39,7 +39,7 @@ const [errorg, setErrorg] = useState("");
    
     const history = useHistory();
     const trains=()=>{
-        axios.post("http://localhost:7000/Train/viewtraindetails",{
+        axios.post("http://localhost:8080/Train/viewtraindetails",{
 from:from,
 to:to,
 date:date
@@ -103,7 +103,7 @@ e.preventDefault()
 const user_id = localStorage.getItem("user_id");
 const book=(train_id)=>{
     console.log(train_id);
-    axios.post('http://localhost:7000/Booking/booking',{
+    axios.post('http://localhost:8080/Booking/booking',{
 user_id:user_id,
 train_id:train_id,
 from:from,to:to,date:date,classes:classes,general:general,amount:0,passengerCount:0,status:"waiting",pnrno:""
