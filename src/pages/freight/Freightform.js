@@ -93,7 +93,7 @@ const username = localStorage.getItem("username")
                 setsOpen(true)
     
                 try {
-                    // await axios.post("http://localhost:8080/insertfreight",
+              
                     axios.post("http://localhost:7000/Freight/insertfreight",
                         { username,sfid, sfname, sftype, sdeparture, sarrival, sfrom, sto },  {
                             headers:{authorization:`Bearer ${Token()}`}
