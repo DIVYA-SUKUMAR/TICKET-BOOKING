@@ -193,7 +193,7 @@ const [general, setGeneral] = useState(state.general)
     if(captchaverified){
      if(numberverified){
        if(adultverified){
-         axios.post("http://localhost:7000/passenger/addpassenger",
+         axios.post("http://localhost:8080/passenger/addpassenger",
          {booking_id:state.booking_id,Passengers:adultFields,childinputFields,
           
           policy_Status:policy,
@@ -201,7 +201,7 @@ const [general, setGeneral] = useState(state.general)
             headers:{authorization:`Bearer ${Token()}`}
            }
        ).then((res)=>{console.log(res.data)
-            axios.patch("http://localhost:7000/Booking/updateCount",
+            axios.patch("http://localhost:8080/Booking/updateCount",
             {_id:state.booking_id,passengerCount:adultFields.length,
              },  {
               headers:{authorization:`Bearer ${Token()}`}
