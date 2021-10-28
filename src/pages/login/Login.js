@@ -17,7 +17,7 @@ export default function Login() {
   
    
       const onSubmit = (data) =>{
-        axios.post("http://localhost:7000/User/login",data).then((res)=>{
+        axios.post("http://localhost:8080/User/login",data).then((res)=>{
 console.log(res.data);
 if(res.data === "user not found" || res.data === "password does not match"){
      setError(res.data)
