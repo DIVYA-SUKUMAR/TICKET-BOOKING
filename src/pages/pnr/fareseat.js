@@ -16,7 +16,7 @@ export default function Fareseat() {
   const onSubmit = data => {
     handleOpen()
     console.log(data);
-    axios.get(`http://localhost:7000/Pnr/viewtrainfare/${data.tno}/${data.date}/${data.source}/${data.destination}/${data.class}/${data.quota}`,{
+    axios.get(`http://localhost:8080/Pnr/viewtrainfare/${data.tno}/${data.date}/${data.source}/${data.destination}/${data.class}/${data.quota}`,{
       headers:{authorization:`Bearer ${Token()}`}
      }).then((res)=>{setdata(res.data);})
      }
