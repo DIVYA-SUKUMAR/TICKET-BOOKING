@@ -43,12 +43,12 @@ const total = amount*state.Passengers;
 
         const onSubmit = (data) =>{
           handleOpen()
-        axios.post("http://localhost:7000/Payment/insert",{data},{
+        axios.post("http://localhost:8080/Payment/insert",{data},{
           headers:{authorization:`Bearer ${Token()}`}
          }
        )
         .then((res)=> {
-          axios.patch("http://localhost:7000/Booking/updateStatus",
+          axios.patch("http://localhost:8080/Booking/updateStatus",
             {_id:state.booking_id,amount:total,status:"confirmed"
              },{
               headers:{authorization:`Bearer ${Token()}`}
