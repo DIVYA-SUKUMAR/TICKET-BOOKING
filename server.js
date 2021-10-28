@@ -21,6 +21,9 @@ app.use('/Payment',Payment)
 app.use('/Freight',Freight)
 app.use('/Contact',Contact)
 app.use('/User',User)
+app.get('/',(req,res)=>{
+ console.log(res);  
+})
 //app.listen(process.env.PORT || 7000);
 const port = process.env.port || 7000 ;
 app.listen(port,()=>{
