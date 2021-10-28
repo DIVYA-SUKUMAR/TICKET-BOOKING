@@ -21,8 +21,8 @@ app.use('/Payment',Payment)
 app.use('/Freight',Freight)
 app.use('/Contact',Contact)
 app.use('/User',User)
-app.listen(process.env.PORT || 7000);
-//const port = process.env.port || 7000 ;
-//app.listen(port,()=>{
-//    console.log("server listening to port "+port);
-//})
+//app.listen(process.env.PORT || 7000);
+const port = process.env.port || 7000 ;
+app.listen(port,()=>{
+   console.log("server listening to port "+port);
+})
