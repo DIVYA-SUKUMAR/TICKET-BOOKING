@@ -12,7 +12,7 @@ export default function Contact() {
   
   const onSubmit = data => {
     handleOpen();
-    axios.post("http://localhost:7000/Contact/insertcontact", { data })
+    axios.post("http://localhost:8080/Contact/insertcontact", { data })
   }
   return (
     <div>
